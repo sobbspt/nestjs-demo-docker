@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  demo-app:
+    container_name: demo-app
+    image: multi-stage:4
+    ports:
+      - "3000:3000"
+    environment:
+      HELLO: world2
